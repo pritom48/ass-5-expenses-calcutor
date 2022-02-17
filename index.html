@@ -11,9 +11,9 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="">
     <header>
-        <h1 class="text-center">Expenses calculator</h1>
+        <h1 class="text-center text-white bg-dark p-3">Expenses calculator</h1>
     </header>
     <main>
         <div class="container">
@@ -21,40 +21,40 @@
                 <div class="col-lg-6">
                     <img class="img-fluid" src="images/calculator-with-money.jpg" alt="">
                 </div>
-                <div class="col-lg-6 mt-5">
+                <div class="col-lg-6 mt-5 bg-secondary">
                     <div>
                         <!-- Income part -->
-                        <h4 class="text-center">Income</h4>
+                        <h4 class="text-center text-white">Income</h4>
                         <div class="col-auto">
-                            <label for="" class="col-form-label">Income</label>
+                            <label for="" class="col-form-label  text-white">Income</label>
                         </div>
                         <div class="col-auto">
-                            <input type="" id="" class="form-control">
+                            <input id="income-input" type="" id="" class="form-control">
                         </div>
                         <!-- expenses part -->
-                        <h4 class="text-center mt-4">Expenses</h4>
+                        <h4 class="text-center mt-4 text-white">Expenses</h4>
                         <div class="col-auto">
-                            <label for="" class="col-form-label">Food</label>
+                            <label for="" class="col-form-label text-white">Food</label>
                         </div>
                         <div class="col-auto">
                             <input id="food-input" type="" id="" class="form-control">
                         </div>
                         <div class="col-auto">
-                            <label for="" class="col-form-label">Rent</label>
+                            <label for="" class="col-form-label text-white">Rent</label>
                         </div>
                         <div class="col-auto">
                             <input id="rent-input" type="" id="" class="form-control">
                         </div>
                         <div class="col-auto">
-                            <label for="" class="col-form-label">Clothes</label>
+                            <label for="" class="col-form-label text-white">Clothes</label>
                         </div>
                         <div class="col-auto">
                             <input id="clothes-input" type="" id="" class="form-control">
                         </div>
                     </div>
-                    <div class="text-center mt-3">
+                    <div class="text-center text-white mt-3">
                         <h3 class="mt-4">Total Expenses : <span id="total-expenses">00</span></h3>
-                        <h3>Balance : <span>00</span></h3>
+                        <h3>Balance : <span id="balance-now">00</span></h3>
                     </div>
                     <div class="d-flex justify-content-center">
                         <button id="calculate-btn" type="button" class="btn btn-info">Calculate</button>
