@@ -16,5 +16,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 
     //total expenses
     const totalExpenses = foodExpenses + rentExpenses + clothesExpenses;
+    let totalExpensesField = document.getElementById('total-expenses');
+    totalExpensesField.innerText = totalExpenses;
     console.log(totalExpenses);
 })
