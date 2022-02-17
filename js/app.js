@@ -5,8 +5,8 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     // console.log(income)
 
     //food expenses
-    const foodIput = document.getElementById('food-input');
-    const foodExpenses = parseFloat(foodIput.value);
+    const foodInput = document.getElementById('food-input');
+    const foodExpenses = parseFloat(foodInput.value);
     // console.log(foodExpenses)
 
     // rent expenses
@@ -29,4 +29,15 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     const balance = income - totalExpenses;
     const balanceNow = document.getElementById('balance-now');
     balanceNow.innerText = balance;
+
+    // clear all input field
+
+    // clear income input
+    incomeInput.value = '';
+    // clear food input
+    foodInput.value = '';
+    //clear rent input 
+    rentInput.value = '';
+    //clear colthes input 
+    clothesInput.value = '';
 })
